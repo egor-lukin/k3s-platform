@@ -8,6 +8,8 @@ repositories:
     url: https://charts.jetstack.io
   - name: wikimedia
     url: https://helm-charts.wikimedia.org/stable/
+  - name: gitlab
+    url: https://charts.gitlab.io
 
 releases:
   - name: csi-driver
@@ -36,3 +38,10 @@ releases:
     version: 0.2.5
     values:
       - ./cert-manager/raw-resources.yaml
+
+  - name: gitlab-runner
+    chart: gitlab/gitlab-runner
+    namespace: gitlab-runner-ns
+    version: 0.31.0
+    values:
+      - ./gitlab-runner/values.yaml

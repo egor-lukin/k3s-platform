@@ -1,0 +1,10 @@
+gitlabUrl: "https://gitlab.com/"
+logLevel: "debug"
+
+concurrent: 3
+
+nodeSelector:
+  node-role.kubernetes.io/worker: "worker"
+
+rbac:
+  create: true
