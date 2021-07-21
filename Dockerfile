@@ -28,6 +28,8 @@ RUN curl -qsL https://github.com/roboll/helmfile/releases/download/v$HELMFILE_VE
 
 RUN curl -sLS https://get.k3sup.dev | sh
 
+RUN helm plugin install https://github.com/databus23/helm-diff
+
 WORKDIR /terraform
 
 COPY . .

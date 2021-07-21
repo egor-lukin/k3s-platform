@@ -1,0 +1,9 @@
+templates:
+- |
+    apiVersion: v1
+    kind: Secret
+    metadata:
+      name: hcloud-csi
+      namespace: kube-system
+    stringData:
+      token: {{ .Values.hcloud_token }}

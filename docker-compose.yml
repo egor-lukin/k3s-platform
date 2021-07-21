@@ -6,5 +6,8 @@ services:
     volumes:
       - .:/terraform
       - .terraform.d:/root/.terraform.d/
+      - ~/.kube/config:/root/.kube/config
       - ~/.ssh/mini-apps-platform.pub:/terraform/terraform/live/cluster-prod/.ssh/mini-apps-platform.pub:ro
       - ~/.ssh/mini-apps-platform:/terraform/terraform/live/cluster-prod/.ssh/mini-apps-platform:ro
+    environment:
+      - HCLOUD_TOKEN
