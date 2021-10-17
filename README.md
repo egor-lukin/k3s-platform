@@ -1,4 +1,4 @@
-# K3S Platform (WIP)
+# K3S Platform
 
 Код для настройки инфраструктуры на базе hetzner cloud и k3s.
 
