@@ -24,5 +24,5 @@
 3. cert-manager и issuers - для работы с https сертификатами 
 
 ### Основные комманды
-helmfile diff --set hcloud_token=$HCLOUD_TOKEN --set runnerRegistrationToken=$GITLAB_TOKEN
-helmfile sync --set hcloud_token=$HCLOUD_TOKEN --set runnerRegistrationToken=$GITLAB_TOKEN
+* helmfile diff --set hcloud_token=$HCLOUD_TOKEN --set runnerRegistrationToken=$GITLAB_TOKEN
+* helmfile sync --set hcloud_token=$HCLOUD_TOKEN --set runnerRegistrationToken=$GITLAB_TOKEN
